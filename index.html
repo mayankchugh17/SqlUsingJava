@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <script src="script.js"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h2 {
+            color: #333;
+            margin-top: 30px;
+            font-size: 2rem;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            margin: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        button:active {
+            background-color: #003f7f;
+        }
+
+        #output {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 80%;
+            margin-left: 10%;
+            text-align: left;
+            color: #333;
+        }
+
+        .btn-container {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>User Management</h2>
+
+    <div class="btn-container">
+        <button onclick="createUser()">Create User</button>
+        <button onclick="getUsers()">Get Users</button>
+        <button onclick="selectUser()">Get User by ID</button>
+        <button onclick="updateUser()">Update User</button>
+        <button onclick="deleteUser()">Delete User</button>
+    </div>
+
+    <h3>Output:</h3>
+    <div id="output"></div>
+</body>
+</html>
